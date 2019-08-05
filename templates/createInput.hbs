@@ -1,0 +1,13 @@
+import { prismaInputObjectType } from 'nexus-prisma'
+
+export const {{type}}CreateInput = prismaInputObjectType({
+  name: '{{type}}CreateInput',
+  definition (t) {
+    // Forwarding prisma type fields
+    t.prismaFields([
+    {{#each fields}}
+      '{{ this }}',
+    {{/each}}
+    ])
+  }
+})

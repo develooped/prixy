@@ -1,0 +1,12 @@
+import { subscriptionField, arg } from 'nexus'
+
+export const {{type}}Subscription = subscriptionField('{{camelCaseType}}', {
+  type: '{{type}}SubscriptionPayload',
+  args: {
+    where: arg({
+      type: '{{type}}SubscriptionWhereInput'
+    })
+  },
+  subscribe: (root, args, ctx) => ctx.prisma.$subscribe.{{camelCaseType}}(args.where),
+  resolve: payload => payload
+})

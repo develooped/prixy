@@ -1,0 +1,30 @@
+import { prismaObjectType } from 'nexus-prisma'
+
+export const {{type}} = prismaObjectType({
+  name: '{{type}}',
+  definition: t => {
+    // Forwarding prisma type fields
+    t.prismaFields([
+    {{#each fields}}
+      '{{ this }}',
+    {{/each}}
+    ])
+
+    // Here you can add your custom fields to the {{type}} type
+  }
+})
+
+// To use with react-admin this hack must be added!
+export const {{type}}Connection = prismaObjectType({
+  name: '{{type}}Connection',
+  definition (t) {
+    t.prismaFields(['*'])
+
+    t.field('aggregate', {
+      ...t.prismaType.aggregate,
+      resolve (root, args, ctx) {
+        return ctx.prisma.{{connection}}(args).aggregate()
+      }
+    })
+  }
+})

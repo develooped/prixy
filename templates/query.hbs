@@ -1,0 +1,16 @@
+import { prismaExtendType } from 'nexus-prisma'
+
+export const Query = prismaExtendType({
+  name: 'Query',
+  type: 'Query',
+  definition: t => {
+    // Forwarding prisma queries
+    t.prismaFields([
+    {{#each fields}}
+      '{{ this }}',
+    {{/each}}
+    ])
+
+    // Here you can add your custom fields to the {{type}} query
+  }
+})

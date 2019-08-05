@@ -1,0 +1,13 @@
+import { prismaInputObjectType } from 'nexus-prisma'
+
+export const {{type}}UpdateInput = prismaInputObjectType({
+  name: '{{type}}UpdateInput',
+  definition (t) {
+    // Forwarding prisma type fields
+    t.prismaFields([
+    {{#each fields}}
+      '{{ this }}',
+    {{/each}}
+    ])
+  }
+})

@@ -1,0 +1,16 @@
+import { prismaExtendType } from 'nexus-prisma'
+
+export const Mutation = prismaExtendType({
+  name: 'Mutation',
+  type: 'Mutation',
+  definition: (t) => {
+    // Forwarding prisma mutations
+    t.prismaFields([
+    {{#each fields}}
+      '{{ this }}',
+    {{/each}}
+    ])
+
+    // Here we can add more custom mutations
+  }
+})

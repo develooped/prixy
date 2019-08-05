@@ -1,0 +1,64 @@
+{
+  "name": "prixy",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "install-peers": "install-peers -f",
+    "test": "jest"
+  },
+  "bin": {
+    "prixy": "./bin/prixy.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sentry/node": "^5.5.0",
+    "aws-sdk": "^2.486.0",
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "deepmerge": "^3.2.0",
+    "dotenv": "^8.0.0",
+    "dotenv-parse-variables": "^0.2.0",
+    "esm": "^3.2.22",
+    "gql-tag": "^1.0.1",
+    "graphql-middleware-sentry": "^3.2.0",
+    "graphql-shield": "^5.3.5",
+    "graphql-upload": "^8.0.7",
+    "graphql-voyager": "^1.0.0-rc.27",
+    "graphql-yoga": "^1.17.4",
+    "handlebars": "^4.1.2",
+    "jsonwebtoken": "^8.5.1",
+    "mime-types": "^2.1.24",
+    "nodemailer": "^6.2.1",
+    "sofa-api": "^0.3.0",
+    "swagger-ui-express": "^4.0.5",
+    "uuid": "^3.3.2"
+  },
+  "peerDependencies": {
+    "graphql": "^14.3.0",
+    "nexus": "^0.11.7",
+    "nexus-prisma": "^0.3.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-export-namespace-from": "^7.2.0",
+    "@babel/preset-env": "^7.4.4",
+    "@sentry/cli": "^1.47.1",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.8.0",
+    "camelcase": "^5.3.1",
+    "commander": "^2.20.0",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^9.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "install-peers-cli": "^2.1.1",
+    "jest": "^24.8.0",
+    "plop": "^2.3.0",
+    "pluralize": "^7.0.0",
+    "prisma-datamodel": "^1.30.4"
+  }
+}
