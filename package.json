@@ -1,6 +1,6 @@
 {
   "name": "prixy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "scripts": {
     "install-peers": "install-peers -f",
@@ -23,12 +23,10 @@
     "esm": "^3.2.22",
     "gql-tag": "^1.0.1",
     "graphql-middleware-sentry": "^3.2.0",
-    "graphql-shield": "^5.3.5",
     "graphql-upload": "^8.0.7",
     "graphql-voyager": "^1.0.0-rc.27",
     "graphql-yoga": "^1.17.4",
     "handlebars": "^4.1.2",
-    "jsonwebtoken": "^8.5.1",
     "mime-types": "^2.1.24",
     "nodemailer": "^6.2.1",
     "sofa-api": "^0.3.0",
@@ -42,6 +40,7 @@
   },
   "peerDependencies": {
     "graphql": "^14.3.0",
+    "graphql-shield": "^5.3.5",
     "nexus": "^0.11.7",
     "nexus-prisma": "^0.3.7"
   },
