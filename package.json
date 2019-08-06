@@ -1,13 +1,14 @@
 {
   "name": "prixy",
-  "version": "0.0.81",
+  "version": "0.0.84",
   "description": "Prisma proxy server",
   "scripts": {
     "install-peers": "install-peers -f",
     "test": "jest"
   },
   "bin": {
-    "prixy": "./bin/prixy.js"
+    "prixy": "./bin/prixy.js",
+    "prixy-debug": "./bin/prixy-debug.js"
   },
   "keywords": [],
   "author": "",
