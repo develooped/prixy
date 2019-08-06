@@ -1,7 +1,7 @@
 {
   "name": "prixy",
-  "version": "0.0.3",
-  "description": "",
+  "version": "0.0.6",
+  "description": "Prisma proxy server",
   "scripts": {
     "install-peers": "install-peers -f",
     "test": "jest"
