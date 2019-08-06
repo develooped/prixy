@@ -3,5 +3,5 @@ const mail = require('./lib/mail')
 
 module.exports = {
   env,
-  mail
+  mail: mail.default
 }
