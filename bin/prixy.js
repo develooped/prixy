@@ -1,4 +1,4 @@
-#!/usr/bin/env node --preserve-symlinks
+#!/usr/bin/node
 
 const program = require('commander')
 const packageJson = require('../package.json')
