@@ -1,6 +1,6 @@
 {
   "name": "prixy",
-  "version": "0.1.1",
+  "version": "0.1.14",
   "description": "Prisma proxy server",
   "scripts": {
     "install-peers": "install-peers -f",
@@ -10,9 +10,14 @@
     "prixy": "./bin/prixy.js",
     "prixy-debug": "./bin/prixy-debug.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "prisma",
+    "express",
+    "nexus",
+    "graphql"
+  ],
+  "author": "Develooped Software",
+  "license": "MIT",
   "dependencies": {
     "@sentry/node": "^5.5.0",
     "aws-sdk": "^2.486.0",
@@ -24,6 +29,7 @@
     "dotenv": "^8.0.0",
     "dotenv-parse-variables": "^0.2.0",
     "esm": "^3.2.22",
+    "flatted": "^2.0.1",
     "gql-tag": "^1.0.1",
     "graphql-middleware-sentry": "^3.2.0",
     "graphql-upload": "^8.0.7",
