@@ -5,4 +5,4 @@ process.argv = process.argv.filter(a => a !== 'generate')
 
 process.argv.push('--plopfile', PLOPFILE)
 
-require('plop')
+require('plop/bin/plop')
